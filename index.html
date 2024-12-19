@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar-wrapper">
+      <div class="container navbar">
+        <a href="/">
+          <img src="assets/logo.svg" alt="Portfolio logo" class="navbar-logo" />
+        </a>
+        <button class="btn" id="navbar-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="navbar-links-wrapper">
+          <ul class="navbar-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#blog">Blog</a></li>
+            <li><a href="/#testimonial">Testimonial</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="btn btn-outline navbar-cta">Let's Talk</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="grid-cols-2 hero-section">
+          <div class="hero-section-details">
+            <p class="hero-section-intro">Hi, 👋 I'm Vinod Bahadur Thapa</p>
+            <h1 class="hero-details-heading">
+              <span class="text-primary">A FullStack</span> <br />
+              <span class="text-hollow">Developer</span>
+            </h1>
+            <p class="hero-details-desc">
+              I'm a full-stack developer creating dynamic, user-friendly
+              applications.
+            </p>
+            <a href="#" class="btn btn-primary btn-lg">
+              <span>Get in touch</span>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+          </div>
+          <div class="hero-photo">
+            <img src="assets/photo.png" alt="Photo" />
+          </div>
+        </div>
+
+        <div class="bg-secondary hero-socials">
+          <div class="hero-social">
+            <i class="fa-brands fa-github"></i>
+            <div class="social-desc">
+              <p class="title">GitHub</p>
+              <a href="https://github.com/binamralamsal" target="_blank"
+                >See my work</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-social">
+            <i class="fa-brands fa-twitter"></i>
+            <div class="social-desc">
+              <p class="title">Twitter</p>
+              <a href="https://twitter.com/binamralamsal" target="_blank"
+                >See my work</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-social">
+            <i class="fa-brands fa-instagram"></i>
+            <div class="social-desc">
+              <p class="title">Instagram</p>
+              <a href="https://instagram.com/thapatechnical" target="_blank"
+                >See my work</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-social">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div class="social-desc">
+              <p class="title">LinkedIn</p>
+              <a href="#">See my work</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="container">
+          <header class="section-header">
+            <h2 class="section-title">About me</h2>
+            <div class="section-title-caption">
+              Explore the Creativity & More
+            </div>
+          </header>
+
+          <p class="about-desc">
+            Welcome to my digital space! I am
+            <span class="text-primary">Vinod Bahadur Thapa</span>, a Full-Stack
+            Developer passionate about crafting seamless web applications. I'm
+            always open to new opportunities, collaborations, and conversations.
+            Whether you have a project in mind or just want to connect, feel
+            free to reach out. Let's build something extraordinary together!
+          </p>
+
+          <div class="about-tabs-container">
+            <div class="tab-items about-tabs">
+              <button class="tab-item" data-tab="about" data-active="true">
+                About
+              </button>
+              <button class="tab-item" data-tab="education">Education</button>
+              <button class="tab-item" data-tab="experience">Experience</button>
+              <button class="tab-item" data-tab="skills">Skills</button>
+            </div>
+
+            <div class="tab-content" data-tab="about" data-active="true">
+              <div class="about-content">
+                <img
+                  src="assets/about.jpg"
+                  class="about-card-image"
+                  alt="Person typing on laptop"
+                />
+
+                <div class="about-content-desc">
+                  <h3 class="about-card-title">Personal Info</h3>
+                  <p class="text-muted">
+                    With 10 years experience as a professional Web developer, i
+                    have acquired the skills and knowledge necessary to make
+                    your project a success. I enjoy every step of the design
+                    process, from discussion and collaboration.
+                  </p>
+
+                  <div class="about-info-cards">
+                    <div class="about-info-card">
+                      <h4 class="about-info-card-title">Email</h4>
+                      <div>vinod@thapatechnical.com</div>
+                    </div>
+                    <div class="about-info-card">
+                      <h4 class="about-info-card-title">Phone</h4>
+                      <div>+91 98XXXXXXXXX</div>
+                    </div>
+                    <div class="about-info-card">
+                      <h4 class="about-info-card-title">Address</h4>
+                      <div>Pune, Maharastra, India</div>
+                    </div>
+                    <div class="about-info-card">
+                      <h4 class="about-info-card-title">Follow</h4>
+                      <div class="follow-socials">
+                        <a href="#" target="_blank">
+                          <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                          <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" data-tab="education">
+              <div class="about-content">Education</div>
+            </div>
+            <div class="tab-content" data-tab="experience">
+              <div class="about-content">Experience</div>
+            </div>
+            <div class="tab-content" data-tab="skills">
+              <div class="about-content">Skills</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section container" id="services">
+        <header class="section-header">
+          <h2 class="section-title">Services</h2>
+          <div class="section-title-caption">My Special Services</div>
+        </header>
+
+        <div class="services-accordions">
+          <div class="accordion services-accordion">
+            <button class="accordion-title services-accordion-title">
+              UI/UX Design
+            </button>
+            <div class="accordion-content">
+              <div class="services-accordion-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+                in quibusdam eum adipisci eaque numquam assumenda quidem
+                possimus! Quia perspiciatis facilis nisi tenetur excepturi
+                pariatur expedita sequi maiores laboriosam nam?
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion services-accordion">
+            <button class="accordion-title services-accordion-title">
+              Product Design
+            </button>
+            <div class="accordion-content">
+              <div class="services-accordion-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+                in quibusdam eum adipisci eaque numquam assumenda quidem
+                possimus! Quia perspiciatis facilis nisi tenetur excepturi
+                pariatur expedita sequi maiores laboriosam nam?
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion services-accordion">
+            <button class="accordion-title services-accordion-title">
+              Mobile Apps
+            </button>
+            <div class="accordion-content">
+              <div class="services-accordion-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+                in quibusdam eum adipisci eaque numquam assumenda quidem
+                possimus! Quia perspiciatis facilis nisi tenetur excepturi
+                pariatur expedita sequi maiores laboriosam nam?
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion services-accordion">
+            <button class="accordion-title services-accordion-title">
+              Brand Design
+            </button>
+            <div class="accordion-content">
+              <div class="services-accordion-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+                in quibusdam eum adipisci eaque numquam assumenda quidem
+                possimus! Quia perspiciatis facilis nisi tenetur excepturi
+                pariatur expedita sequi maiores laboriosam nam?
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion services-accordion">
+            <button class="accordion-title services-accordion-title">
+              Graphic Design
+            </button>
+            <div class="accordion-content">
+              <div class="services-accordion-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+                in quibusdam eum adipisci eaque numquam assumenda quidem
+                possimus! Quia perspiciatis facilis nisi tenetur excepturi
+                pariatur expedita sequi maiores laboriosam nam?
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blogs-section" id="blog">
+        <div class="container">
+          <header class="section-header">
+            <h2 class="section-title">Blog & News</h2>
+            <div class="section-title-caption">
+              See My Latest Blogs and News
+            </div>
+          </header>
+
+          <div class="blog-cards">
+            <div class="blog-card">
+              <a href="#" class="blog-image"
+                ><img src="assets/about.jpg" alt="Blog Image"
+              /></a>
+              <a href="#" class="blog-title">
+                <h3>Top React.js Tips & Tricks</h3>
+              </a>
+              <p class="blog-caption">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
+                debitis facilis blanditiis accusantium suscipit nesciunt?
+              </p>
+              <a href="#" class="btn btn-outline">Read More</a>
+            </div>
+            <div class="blog-card">
+              <a href="#" class="blog-image"
+                ><img src="assets/about.jpg" alt="Blog Image"
+              /></a>
+              <a href="#" class="blog-title">
+                <h3>Top React.js Tips & Tricks</h3>
+              </a>
+              <p class="blog-caption">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
+                debitis facilis blanditiis accusantium suscipit nesciunt?
+              </p>
+              <a href="#" class="btn btn-outline">Read More</a>
+            </div>
+            <div class="blog-card">
+              <a href="#" class="blog-image"
+                ><img src="assets/about.jpg" alt="Blog Image"
+              /></a>
+              <a href="#" class="blog-title">
+                <h3>Top React.js Tips & Tricks</h3>
+              </a>
+              <p class="blog-caption">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
+                debitis facilis blanditiis accusantium suscipit nesciunt?
+              </p>
+              <a href="#" class="btn btn-outline">Read More</a>
+            </div>
+            <div class="blog-card">
+              <a href="#" class="blog-image"
+                ><img src="assets/about.jpg" alt="Blog Image"
+              /></a>
+              <a href="#" class="blog-title">
+                <h3>Top React.js Tips & Tricks</h3>
+              </a>
+              <p class="blog-caption">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
+                debitis facilis blanditiis accusantium suscipit nesciunt?
+              </p>
+              <a href="#" class="btn btn-outline">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section container" id="testimonial">
+        <header class="section-header">
+          <h2 class="section-title">Testimonial</h2>
+          <div class="section-title-caption">What Some of my Client Say</div>
+        </header>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide testimonial">
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+                aut atque ea laboriosam, veritatis numquam, non amet minus
+                exercitationem consectetur velit cupiditate repudiandae. Quod
+                porro repudiandae ratione, ex animi rerum?
+              </blockquote>
+
+              <div class="testimonial-profile">
+                <img src="assets/photo.png" alt="Testimonial Person" />
+                <div class="testimonial-profile-details">
+                  <div class="testimonial-person">John Smith</div>
+                  <div class="testimonial-role">CEO, XYZ Company</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide testimonial">
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+                aut atque ea laboriosam, veritatis numquam, non amet minus
+                exercitationem consectetur velit cupiditate repudiandae. Quod
+                porro repudiandae ratione, ex animi rerum?
+              </blockquote>
+
+              <div class="testimonial-profile">
+                <img src="assets/photo.png" alt="Testimonial Person" />
+                <div class="testimonial-profile-details">
+                  <div class="testimonial-person">John Smith</div>
+                  <div class="testimonial-role">CEO, XYZ Company</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide testimonial">
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+                aut atque ea laboriosam, veritatis numquam, non amet minus
+                exercitationem consectetur velit cupiditate repudiandae. Quod
+                porro repudiandae ratione, ex animi rerum?
+              </blockquote>
+
+              <div class="testimonial-profile">
+                <img src="assets/photo.png" alt="Testimonial Person" />
+                <div class="testimonial-profile-details">
+                  <div class="testimonial-person">John Smith</div>
+                  <div class="testimonial-role">CEO, XYZ Company</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide testimonial">
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+                aut atque ea laboriosam, veritatis numquam, non amet minus
+                exercitationem consectetur velit cupiditate repudiandae. Quod
+                porro repudiandae ratione, ex animi rerum?
+              </blockquote>
+
+              <div class="testimonial-profile">
+                <img src="assets/photo.png" alt="Testimonial Person" />
+                <div class="testimonial-profile-details">
+                  <div class="testimonial-person">John Smith</div>
+                  <div class="testimonial-role">CEO, XYZ Company</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide testimonial">
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+                aut atque ea laboriosam, veritatis numquam, non amet minus
+                exercitationem consectetur velit cupiditate repudiandae. Quod
+                porro repudiandae ratione, ex animi rerum?
+              </blockquote>
+
+              <div class="testimonial-profile">
+                <img src="assets/photo.png" alt="Testimonial Person" />
+                <div class="testimonial-profile-details">
+                  <div class="testimonial-person">John Smith</div>
+                  <div class="testimonial-role">CEO, XYZ Company</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide testimonial">
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+                aut atque ea laboriosam, veritatis numquam, non amet minus
+                exercitationem consectetur velit cupiditate repudiandae. Quod
+                porro repudiandae ratione, ex animi rerum?
+              </blockquote>
+
+              <div class="testimonial-profile">
+                <img src="assets/photo.png" alt="Testimonial Person" />
+                <div class="testimonial-profile-details">
+                  <div class="testimonial-person">John Smith</div>
+                  <div class="testimonial-role">CEO, XYZ Company</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide testimonial">
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+                aut atque ea laboriosam, veritatis numquam, non amet minus
+                exercitationem consectetur velit cupiditate repudiandae. Quod
+                porro repudiandae ratione, ex animi rerum?
+              </blockquote>
+
+              <div class="testimonial-profile">
+                <img src="assets/photo.png" alt="Testimonial Person" />
+                <div class="testimonial-profile-details">
+                  <div class="testimonial-person">John Smith</div>
+                  <div class="testimonial-role">CEO, XYZ Company</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <footer class="footer-section bg-secondary">
+        <div class="container">
+          <header class="footer-header">
+            <div class="footer-caption text-muted">Need Any Project?</div>
+            <h2 class="footer-title">Let's Start</h2>
+          </header>
+
+          <div class="contact-details">
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@thapatechnical.com">
+                info@thapatechnical.com
+              </a>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <a
+                href="https://api.whatsapp.com/send?phone=9779800000000&text=Hey%2C%20I%20need%20a%20help"
+                target="_blank"
+              >
+                +977 98000000000
+              </a>
+            </div>
+          </div>
+
+          <hr class="footer-seprator" />
+
+          <div class="footer-socials">
+            <a href="#" class="footer-social-link" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="footer-social-link" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="footer-social-link" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-social-link" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
